@@ -1,8 +1,5 @@
 
-
-import { stringify } from "querystring";
-
-const mongoose = reqiure("mongoose");
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
     username : {
@@ -29,7 +26,7 @@ const userSchema = new mongoose.Schema({
         default: false,
     },
     avatarImage: {
-        type: stringify,
+        type: String,
         default: "",
     },
 });
