@@ -24,7 +24,13 @@ mongoose.connect(process.env.MONGO_URL, {
 }).catch( (err) => {
     console.log(err.message);
 });
+const isConnected = mongoose.connection.readyState === 1; // 1 means connected, 0 means disconnected
 
+if (isConnected) {
+    console.log("MongoDB is connected!");
+} else {
+    console.log("MongoDB is not connected!");
+}
 // create server
 const server = app.listen(process.env.PORT, () => {
     console.log(`server Started on Port ${process.env.PORT}`);
