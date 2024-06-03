@@ -6,6 +6,7 @@ const messagesRoutes = require("./routes/messagesRoutes");
 const app = express();
 const socket = require('socket.io');
 
+header("Access-Control-Allow-Origin: *");
 
 require("dotenv").config();
 
