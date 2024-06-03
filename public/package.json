@@ -20,7 +20,7 @@
     "socket.io-client": "^4.5.1",
     "styled-components": "^5.3.5",
     "uuid": "^8.3.2",
-    "wehttps://chat-c0kmfvjgb-adityagupta0123s-projects.vercel.appb-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
